@@ -3,9 +3,8 @@
 Repository that contains Li et al. Cell Regeneration, 2022 (*under review*).
 
 ## RNA-seq analysis
-Run `.R` files in `R` or `Rstudio` 
+Run `.R` files in `R` or `Rstudio`.
 
 ## ChIP-seq analsis
-~~~
-sh ChIP-seq_analysis 
-~~~
+The `ChIP-seq_analysis` file is used to perform `aliment` and `remove duplication`.  
+
