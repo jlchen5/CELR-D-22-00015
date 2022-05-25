@@ -5,7 +5,6 @@ suppressMessages(library(sva))
 suppressMessages(library(DESeq2))
 suppressMessages(library(ggplot2))
 
-################################ 1  data.frame: expr cpm repClass
 filelist<-dir("coding_genes/",pattern = "*simple")
 filelist <- paste("coding_genes/",filelist,sep="")
 file1.count<-read.table(filelist[1],header = T,sep = "\t")
@@ -64,10 +63,9 @@ colnames(expr)<-c("Control_for_Group2-1","Control_for_Group2-2",
                   "wt_for_suz12-1","wt_for_suz12-2","wt_for_suz12-3",
                   "Ythdc1_cKO_4OHT-1","Ythdc1_cKO_4OHT-2",
                   "Ythdc1_cKO_DMSO-1","Ythdc1_cKO_DMSO-2")
-##### 导入phenomena
+
 pheno <- read.csv("pheno.csv",header = T)
 
-##### 未去除批次效应，PCA #####
 colData <- data.frame(row.names =colnames(expr),batch=pheno$batch)
 dds <- DESeqDataSetFromMatrix(countData = expr, colData = colData, design = ~ batch) 
 cpm <- fpm(dds,robust = FALSE)
@@ -85,7 +83,7 @@ ggplot(data.pheno, aes(x = PC1, y=PC2)) +
   xlab(paste0("PC1:","27% variance"))+
   ylab(paste0("PC2:","21% variance"))
 
-##### 去除批次效应，PCA #####
+
 expr <- ComBat(dat = as.matrix(expr),batch=pheno$batch,mod=NULL,par.prior=T)
 expr[expr < 0] <- 0
 expr <- round(expr,digits = 0)
@@ -110,17 +108,9 @@ ggplot(data.pheno, aes(x = PC1, y=PC2)) +
 
 
 
-
-
 library(limma)
 removeBatchEffect(x, batch=NULL, batch2=NULL, covariates=NULL,
                   design=matrix(1,ncol(x),1), ...)
-
-
-
-
-
-
 
 
 
