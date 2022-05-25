@@ -19,7 +19,7 @@ Adapters and low-quality bases were removed using [Trim Galore v0.6.4_dev](https
 
 - Correlation among different samples is analyzed via [CalculateCorrelation.R](https://github.com/jlchen5/CELR-D-22-00015/blob/main/CalculateCorrelation.R) and [plotCorrHeatmap.R](https://github.com/jlchen5/CELR-D-22-00015/blob/main/plotCorrHeatmap.R) is used to plot correlation heatmap.
 - Principal Component Analysis (PCA) is calculated the foldchange (vs. control/wild type) between the samples with the depletion of the indicated genes to control (or wild type) samples via [PCAanalysis.R](https://github.com/jlchen5/CELR-D-22-00015/blob/main/PCAanalysis.R).
-- [GOanalysis.R](https://github.com/jlchen5/CELR-D-22-00015/blob/main/GOanalysis.R) is used to GO analysis.
+- [GOanalysis.R](https://github.com/jlchen5/CELR-D-22-00015/blob/main/GOanalysis.R) is used to perform GO analysis.
 
 
 ## III. Quality Control
