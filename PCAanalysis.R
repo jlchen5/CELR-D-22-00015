@@ -13,11 +13,8 @@ pca_prcp_contrib <- data.pca$sdev %>% .^2 %>% {./sum(.) * 100} %>% .[1:2] %>% si
 pca_prcp_contrib
 
 plot(data.pca$x,cex = 3,main = "PCA analysis", col = c(rep("pink1",1),rep("pink2",1)),pch = c(rep(16,3),rep(16,3)))
-# 添加分隔线
 abline(h=0,v=0,lty=2,col="gray")
-# 添加标签
 text(data.pca$x,labels = rownames(data.pca$x),pos = 4,offset = 0.6,cex = 1)
-# 添加图例
 legend("bottomright",title = "Sample",inset = 0.01,legend = rownames(data.pca$x),col = c(rep("red",3),rep("blue",3)),pch = c(rep(16,3),rep(17,3)))
 
 #############################
