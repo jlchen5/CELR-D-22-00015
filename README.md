@@ -25,6 +25,6 @@ Adapters and low-quality bases were removed using [Trim Galore v0.6.4_dev](https
 ## III. Quality Control
 
 All data in this article has been quality controlled, the qc reports are as follows:   
- - `ChIP-seq data`: [ChIP-seq_multiqc_report](https://htmlpreview.github.io/?https://github.com/jlchen5/CELR-D-22-00015/blob/main/QC/ChIP-seq_multiqc_report.html)  
- - `RNA-seq data`:[RNA-seq_multiqc_report](https://htmlpreview.github.io/?https://github.com/jlchen5/CELR-D-22-00015/blob/main/QC/RNA-seq_multiqc_report.html)  
+ - [ChIP-seq_multiqc_report](https://htmlpreview.github.io/?https://github.com/jlchen5/CELR-D-22-00015/blob/main/QC/ChIP-seq_multiqc_report.html)  
+ - [RNA-seq_multiqc_report](https://htmlpreview.github.io/?https://github.com/jlchen5/CELR-D-22-00015/blob/main/QC/RNA-seq_multiqc_report.html)  
  
