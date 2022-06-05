@@ -24,7 +24,7 @@ For the repetitive Elements binding analysis, the reads were then aligned to the
 - Correlation among different samples is analyzed via [CalculateCorrelation.R](https://github.com/jlchen5/CELR-D-22-00015/blob/main/CalculateCorrelation.R) and [plotCorrHeatmap.R](https://github.com/jlchen5/CELR-D-22-00015/blob/main/plotCorrHeatmap.R) is used to plot correlation heatmap.
 - Principal Component Analysis (PCA) is calculated the foldchange (vs. control/wild type) between the samples with the depletion of the indicated genes to control (or wild type) samples via [PCAanalysis.R](https://github.com/jlchen5/CELR-D-22-00015/blob/main/PCAanalysis.R).
 - [GOanalysis.R](https://github.com/jlchen5/CELR-D-22-00015/blob/main/GOanalysis.R) is used to perform GO analysis.
-- Single locus repeats RNA-seq analysis needs single locus position annotation file ([mm9_repeats_single_locus.gtf]()) to annotate the reads signal in genome. 
+- Single locus repeats RNA-seq analysis needs single locus position annotation file to annotate the reads signal in genome. 
   ~~~
   featureCounts sample.repeats.Aligned.sortedByCoord.out.bam \
                 -a ~/project/rif1/mm9_repeats_single_locus.gtf \
