@@ -1,7 +1,7 @@
 # CELR-D-22-00015
 
 - Repository that contains the analysis from [Li et al. ***Cell Regeneration***, 2022](https://doi.org/10.1186/s13619-022-00124-9).  
-- All ChIP-seq (GSE203304) and RNA-seq (GSE203305) data in this paper are accessible at GEO Accession viewer under the number: GSE203306.
+- All ChIP-seq ([GSE203304](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203304)) and RNA-seq ([GSE203305](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203305)) data in this paper are accessible at GEO Accession viewer under the number: [GSE203306](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203306).
 
 ## I. Upstream analysis
 
